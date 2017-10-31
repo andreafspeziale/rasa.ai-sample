@@ -2,5 +2,5 @@
   "pipeline": "spacy_sklearn",
   "path" : "./openmaker/",
   "data" : "./data/openmaker_training_data.json",
-  "emulate" : "luis"
+  "emulate" : ""
 }
