@@ -6,6 +6,7 @@
     - pip
     - virtualenv
     - curl
+    - brew install XZ (for mac)
 
 ## Install
 
@@ -32,3 +33,18 @@ This will start a server listening on port 5000
     - curl -XPOST localhost:5000/parse -d '{"q":"Who likes javascript?"}' | python -mjson.tool
 
 Magic
+
+# MOODBOT
+
+This repository contains also the rasa.ai CORE package.
+A simple sample can be found with comments in the MOODBOT folder.
+
+## Train MOODBOT
+
+    - $ cd moodbot
+    - $ python -m rasa_nlu.train -c nlu_model_config.json --fixed_model_name current
+
+## Train the dialogue model
+
+    - $ python -m rasa_core.train -s data/stories.md -d domain.yml -o models/dialogue
+    - $ python -m rasa_core.run -d models/dialogue -u models/nlu/current
