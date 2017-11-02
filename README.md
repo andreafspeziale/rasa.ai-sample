@@ -19,7 +19,7 @@
 ## Create models from training data
 
     - edit config_spacy.json passing as "data" your training data
-    - $ python -m rasa_nlu.train -c config_spacy.json
+    - $ python -m rasa_nlu.train -c config_spacy.json --fixed_model_name current
 
 This will create a openmaker folder with model data
 

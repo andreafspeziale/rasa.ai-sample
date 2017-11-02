@@ -1,7 +1,8 @@
 .DS_Store
 env
 logs
-openmaker
+openmaker-models
 moodbot/models
-restaurantbot
+restaurantbot/models
 moodbot/graph.png
+*.pyc
