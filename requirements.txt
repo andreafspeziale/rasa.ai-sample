@@ -1,3 +1,4 @@
+rasa-core==0.7.3
 rasa-nlu==0.10.1
 spacy==1.9.0
 scikit-learn==0.19.1

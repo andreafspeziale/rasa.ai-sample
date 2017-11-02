@@ -1,109 +1,109 @@
-﻿{
-  "rasa_nlu_data": {
-    "common_examples": [
-      {
-        "text": "Who likes javascript?",
-        "intent": "search_user_by_tag",
-        "entities": [
-          {
-            "start": 10,
-            "end": 20,
-            "value": "javascript",
-            "entity": "tag",
-            "extractor": "ner_spacy",
-            "processors": []
-          }
+{
+    "rasa_nlu_data": {
+        "entity_synonyms": [
+            {
+                "value": "raspberry",
+                "synonyms": ["Raspberry", "Raspberry Pi", "Raspberry pi", "raspberrypi", "raspberry pi"]
+            },
+            {
+                "value": "javascript",
+                "synonyms": ["Javascript", "js"]
+            },
+            {
+                "value": "milan",
+                "synonyms": ["Milan", "MI", "Milano", "milan", "milan"]
+            }
+        ],
+        "common_examples": [
+            {
+                "text": "Who likes javascript?",
+                "intent": "search_user_by_tag",
+                "entities": [
+                    {
+                        "start": 10,
+                        "end": 20,
+                        "value": "javascript",
+                        "entity": "tag"
+                    }
+                ]
+            },
+            {
+                "text": "i'm looking for people who like python",
+                "intent": "search_user_by_tag",
+                "entities": [
+                    {
+                        "start": 32,
+                        "end": 38,
+                        "value": "python",
+                        "entity": "tag"
+                    }
+                ]
+            },
+            {
+                "text": "What are Arduino's news of the day?",
+                "intent": "search_news_by_tag",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 16,
+                        "value": "Arduino",
+                        "entity": "theme"
+                    }
+                ]
+            },
+            {
+                "text": "What are Raspberry's news of the day?",
+                "intent": "search_news_by_tag",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 18,
+                        "value": "Raspberry",
+                        "entity": "theme"
+                    }
+                ]
+            },
+            {
+                "text": "i am looking for users from Milan",
+                "intent": "search_user_by_location",
+                "entities": [
+                    {
+                        "start": 28,
+                        "end": 33,
+                        "value": "Milan",
+                        "entity": "location"
+                    }
+                ]
+            },
+            {
+                "text": "Who are the influencers of Arduino?",
+                "intent": "search_influencers_by_theme",
+                "entities": [
+                    {
+                        "start": 27,
+                        "end": 34,
+                        "value": "Arduino",
+                        "entity": "theme"
+                    }
+                ]
+            },
+            {
+                "text": "Who are the influencers of Raspberry?",
+                "intent": "search_influencers_by_theme",
+                "entities": [
+                    {
+                        "start": 27,
+                        "end": 36,
+                        "value": "Raspberry",
+                        "entity": "theme"
+                    }
+                ]
+            },
+            {
+                "text": "What is a LES?",
+                "intent": "search_general_information",
+                "entities": []
+            }
         ]
-      },
-      {
-        "text": "i'm looking for people who like python",
-        "intent": "search_user_by_tag",
-        "entities": [
-          {
-            "start": 32,
-            "end": 38,
-            "value": "python",
-            "entity": "tag",
-            "extractor": "ner_spacy",
-            "processors": []
-          }
-        ]
-      },
-      {
-        "text": "What are Arduino's news of the day?",
-        "intent": "search_news_by_tag",
-        "entities": [
-          {
-            "start": 9,
-            "end": 16,
-            "value": "Arduino",
-            "entity": "theme",
-            "extractor": "ner_spacy",
-            "processors": []
-          }
-        ]
-      },
-      {
-        "text": "What are Raspberry's news of the day?",
-        "intent": "search_news_by_tag",
-        "entities": [
-          {
-            "start": 9,
-            "end": 18,
-            "value": "Raspberry",
-            "entity": "theme",
-            "extractor": "ner_spacy",
-            "processors": []
-          }
-        ]
-      },
-      {
-        "text": "i am looking for users from Milan",
-        "intent": "search_user_by_location",
-        "entities": [
-          {
-            "start": 28,
-            "end": 33,
-            "value": "Milan",
-            "entity": "location",
-            "extractor": "ner_spacy",
-            "processors": []
-          }
-        ]
-      },
-      {
-        "text": "Who are the influencers of Arduino?",
-        "intent": "search_influencers_by_theme",
-        "entities": [
-          {
-            "start": 27,
-            "end": 34,
-            "value": "Arduino",
-            "entity": "theme",
-            "extractor": "ner_spacy",
-            "processors": []
-          }
-        ]
-      },
-      {
-        "text": "Who are the influencers of Raspberry?",
-        "intent": "search_influencers_by_theme",
-        "entities": [
-          {
-            "start": 27,
-            "end": 36,
-            "value": "Raspberry",
-            "entity": "theme",
-            "extractor": "ner_spacy",
-            "processors": []
-          }
-        ]
-      },
-      {
-        "text": "What is a LES?",
-        "intent": "search_general_information",
-        "entities": []
-      }
-    ]
-  }
+    }
 }

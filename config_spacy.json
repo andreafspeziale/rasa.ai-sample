@@ -1,6 +1,5 @@
 {
-  "pipeline": "spacy_sklearn",
+  "pipeline": ["nlp_spacy", "tokenizer_spacy", "intent_entity_featurizer_regex", "intent_featurizer_spacy", "ner_crf", "ner_synonyms",  "ner_spacy",  "intent_classifier_sklearn"],
   "path" : "./openmaker/",
-  "data" : "./data/openmaker_training_data.json",
-  "emulate" : ""
+  "data" : "./data/openmaker_training_data.json"
 }
