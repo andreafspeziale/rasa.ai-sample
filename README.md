@@ -2,6 +2,7 @@
 
 ## Requirements
 
+    - macos
     - python
     - pip
     - virtualenv
@@ -48,3 +49,10 @@ A simple sample can be found with comments in the MOODBOT folder.
 
     - $ python -m rasa_core.train -s data/stories.md -d domain.yml -o models/dialogue
     - $ python -m rasa_core.run -d models/dialogue -u models/nlu/current
+
+## Sories viz
+
+    - $ brew install graphviz
+    - $ pip install pygraphviz --install-option="--include-path=/usr/include/graphviz" \
+  --install-option="--library-path=/usr/lib/graphviz/"
+    - $ python -m rasa_core.visualize -d domain.yml -s data/stories.md -o graph.png
