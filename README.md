@@ -15,13 +15,16 @@
     - $ source env/bin/activate
     - $ pip install -r requirements.txt
     - $ python -m spacy download en
+    
+# TEST RASA NLU
 
 ## Create models from training data
 
+    - $ cd test-nlu
     - edit config_spacy.json passing as "data" your training data
     - $ python -m rasa_nlu.train -c config_spacy.json --fixed_model_name current
 
-This will create a openmaker folder with model data
+This will create a test-models folder with model data
 
 ## Serve
 
@@ -31,7 +34,7 @@ This will start a server listening on port 5000
 
 ## Try
 
-    - curl -XPOST localhost:5000/parse -d '{"q":"Who likes javascript?"}' | python -mjson.tool
+    - curl -XPOST localhost:5000/parse -d '{"q":"Hi"}' | python -mjson.tool
 
 Magic
 
@@ -56,3 +59,14 @@ A simple sample can be found with comments in the MOODBOT folder.
     - $ pip install pygraphviz --install-option="--include-path=/usr/include/graphviz" \
   --install-option="--library-path=/usr/lib/graphviz/"
     - $ python -m rasa_core.visualize -d domain.yml -s data/stories.md -o graph.png
+
+# RESTAURANTBOT
+
+    - $ cd moodbot
+    - $ python bot.py train-nlu
+    - $ python bot.py train-dialogue
+    - $ python bot.py run
+    
+# OPENMAKERBOT
+
+It's a working progress test bot using the learned samples above.

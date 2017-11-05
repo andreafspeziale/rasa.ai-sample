@@ -1,6 +1,5 @@
 {
   "pipeline": ["nlp_spacy", "tokenizer_spacy", "intent_entity_featurizer_regex", "intent_featurizer_spacy", "ner_crf", "ner_synonyms",  "ner_spacy",  "intent_classifier_sklearn"],
-  "path" : "./openmaker-models",
-  "project": "nlu",
-  "data" : "./data/openmaker_training_data.json"
+  "path" : "./test-models",
+  "data" : "./data/minimal_greets_training_data.json"
 }
