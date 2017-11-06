@@ -1,0 +1,32 @@
+intents:
+  - greet
+  - affirm
+  - goodbye
+  - search_user_by_tag
+  - search_news_by_theme
+  - search_user_by_location
+  - search_influencers_by_theme
+  - search_general_information_about_open_maker
+
+entities:
+  - location
+  - theme
+  - tag
+
+templates:
+  utter_greet:
+  - text: "Hey!"
+    buttons:
+    - title: "Ask me about users"
+      payload: "(I am searching makers from Turin)"
+
+  utter_search_user_by_location:
+  - text: "Searching user by location..."
+
+  utter_goodbye:
+  - text: "Bye bye bye"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_search_user_by_location

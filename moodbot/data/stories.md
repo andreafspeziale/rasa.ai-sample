@@ -1,8 +1,8 @@
-## happy path               <!-- name of the story - just for debugging -->
+**## happy path               <!-- name of the story - just for debugging -->
 * _greet     
   - utter_greet
 * _mood_great               <!-- user utterance, in format _intent[entities] -->
-  - utter_happy
+  - utter_happy**
 
 ## sad path 1               <!-- this is already the start of the next story -->
 * _greet
